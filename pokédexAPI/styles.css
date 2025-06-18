@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lucida Handwriting";
+    background: #f0f4f8;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+
+.container .logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  display: block;
+  object-fit: contain;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 14px 18px;
+    font-family: "Lucida Handwriting";
+    font-size: 17px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-bar:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 8px rgba(59,130,246,0.5);
+}
+
+#poke-info {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fde4f2;
+    border-radius: 12px;
+    min-height: 200px;
+}
+
+#poke-info h2 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color: #e68bbe;
+}
+
+#poke-info img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    margin-bottom: 15px;
+}
+
+#poke-info img:hover {
+    transform: scale(1.1);
+}
+
+#poke-info p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #374151;
+}
+
+#poke-info strong {
+    color: #eea1cd;
+}
+
+@media (max-width: 450px) {
+    .container {
+        padding: 20px 15px;
+    }
+    #poke-info img {
+        width: 120px;
+        height: 120px;
+    }
+}
